@@ -177,3 +177,96 @@ img {
     height: 100px;
     display: flex;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 20px;
+    }
+    header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    header div {
+        text-align: center;
+    }
+    .main-page,
+    .workout-page,
+    .gym-page {
+        display: inline-block;
+        margin: 10px 0;
+        margin-left: 0 !important;
+        width: auto;
+    }
+    .card {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+    .cards-container {
+        padding: 10px;
+        text-align: center;
+    }
+    .motivation-question,
+    .motivation-card{
+        display: block !important;
+        width: 90%;
+        margin: 10px auto !important;
+        text-align: center;
+    }
+    .workout-page a,
+    .gym-page a {
+        display: inline-block;
+    }
+    .motivation-title {
+        font-size: 20px;
+        margin: 10px;
+    }
+    .button {
+        width: 80%;
+        font-size: 32px;
+        height: 80px;
+        margin: 10px auto;
+        display: block;
+    }
+    .image {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .phrase, .author {
+        font-size: 18px;
+        margin: 10px;
+        display: block;
+        text-align: center;
+    }
+    .footer {
+        height: auto;
+        padding: 10px;
+    }
+    .footer h4 {
+        font-size: 14px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Для очень маленьких экранов (ширина до 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 24px;
+        height: 60px;
+    }
+    .phrase, .author {
+        font-size: 16px;
+    }
+    .card {
+        width: 95%;
+    }
+}
