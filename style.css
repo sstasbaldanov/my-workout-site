@@ -1,16 +1,49 @@
-/* <!-- * {
-    box-sizing: border-box;
-} */
+header {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    height: 130px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-page,
+.workout-page,
+.gym-page {
+    display: inline-block;        
+    padding-bottom: 5px;          
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;  
+}
+
+.main-page:hover,
+.workout-page:hover,
+.gym-page:hover {
+    border-bottom-color: white; 
+}
+
+.workout-page, .gym-page {
+    margin-left: 100px;
+}
+
+.workout-page a,
+.gym-page a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 
 h1, h3, header, body {
     margin: 0;
-}
-
-.aim {
-    text-transform: uppercase;
-    font-size: 40px;
-    color: black;
-    text-align: center;
 }
 
 h1, h2, h3 {
@@ -19,58 +52,65 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-p {
-    font-family:  'Sans MS', Comic Sans, cursive;
-}
-
-header {
-    background-color: black;
+h4 {
+    font-family: 'Luminari', fantasy;
+    font-weight: 50;
+    text-transform: uppercase;
     color: white;
-    padding-top: 20px;
-    height: 130px;
-}
-
-.main_text {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.first {
-    margin-left: 300px;
-    display: inline-block;
-}
-
-.second {
-    margin-left: 300px;
-    display: inline-block;
-}
-
-.block {
-    width: 550px;
-    height: 400px;
-    padding: 5px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 4px 4px 0 black;
+    font-size: 20px;
     margin: auto;
 }
 
-.block-first {
+p, span {
+    font-family:  'Sans MS', Comic Sans, cursive;
+}
+
+span {
+    font-size: 25px;
+}
+
+.cards-container{
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    width: 500px;
+    height: 450px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 20px 30px;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0 black;
+}
+
+.line-first {
+    display: inline-block;
+    text-align: center;
+}
+
+.line-second {
+    text-align: center;
     display: inline-block;
 }
 
-.block-second {
-    display: inline-block;
+.first {
+    margin-left: 70px;
+    margin-bottom: 50px;
 }
 
-.el_one {
-    margin-left: 40px;
+.second {
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
 
-.el_two {
+.third {
+    margin-left: 70px;
+}
+
+.fourth {
     margin-left: 10px;
 }
 
@@ -80,4 +120,60 @@ img {
     display: block;
     margin: auto;
     border: 1px solid black;
+}
+
+.advice {
+    text-align: center;
+}
+
+.motivation-question {
+    width: 400px;
+    height: 300px;
+    margin-right: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.motivation-card {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.image {
+    width: 40%;
+    height: 40%;
+}
+
+.author {
+    text-transform: uppercase;
+}
+
+.motivation-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.button {
+    font-family: 'Luminari', fantasy;
+    width: 300px;
+    height: 100px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-left: 30px;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+
+.footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
 }
